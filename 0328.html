@@ -1,92 +1,142 @@
 <!doctype html>
 <html>
 <head>
-<title>밤톨이와 율.</title>
+    
+<title>나의 전부인 유리에게.</title>
+    
 <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116124346-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-116124346-1');
-</script>
-
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    
+   
     <link rel="stylesheet" href="style.css">
 <script src="color.js"></script>
+      <style>
+          
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+      
+       
+       </style>
     </head>
 
 <body>
-    <h1>톨♥율</h1>
+    <center><img src="%EB%B0%94%EB%B3%B4.jpg" width="10%"></center>
+    <h1><font color='violet'>톨♥율</font></h1>
+ <input type="button" value="night" onclick="
+        nightdayHandler(this);">     
     
-     <input type="button" value="night" onclick="
-        nightdayHandler(this);">
-                                                
-                                               
-    
+                                             
 <div id="grid">
     <ol>
         
-    <li><a href="1.html">톨율 시간표</a></li>
-    <li><a href="2.html">율 성적표</a></li>
-    <li><a href="3.html">톨율 사진첩</a></li>
+    <li><a href="풍와대.html">우리 갔던곳</a></li>
+    
 </ol>
 
 <div id="article">
- <h2>공짜로 먹는 무스쿠스!!</h2>
-    <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GVsnVAEgQ7Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <h2><font color='tomato'>하고 싶은말</font></h2>
+
+<p>
+    안녕안녕? 편지가 짧아서 놀랬지? 내가 아무리 그래도 300일날 그렇게 짧게 쓸까봐? 할 얘기가 얼마나 많은데..
+    
     
     </p>
-<p><a href="http://www.muscus.com/home/" target="_blank" title="율이 사주는 무스쿠스">
-    무스쿠스</a>를 <strong font-color:red>공짜로</strong> 먹을 생각에 톨이는 신이났당.</p>
     
-<img src="%EB%B0%94%EB%B3%B4.jpg" width="40%">
-<p style="margin-top:25px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p> 
+    <p style="margin-top:25px;"></p>
+    
+    <div style="text-align:center; margin:0 0 100px 0; background:#555; line-height:80px;">
+	<a style="color:#fff; font-weight:bold; font-family:tahoma; font-size:20pt;" href="http://ktsmemo.cafe24.com/s/jquery/105"></a>
+</div>
+
+
+
+
+<!-- 예제 종료 -->
+    <br><br><br>
+ <!-- 예제 시작 -->
+
+<style type="text/css">
+
+.helloworld_box {
+	text-align:center;
+}
+.helloworld_box .helloworld {
+	color:#FFFFFF;
+	cursor:pointer;
+	font-size:30pt !important;
+	font-weight:bold;
+	position:relative;
+	text-shadow:0 0 5px #FFFFFF;
+	z-index:100;
+}
+
+</style>
+
+  
+    <div class="helloworld_box">
+    <h3><font color='white'>↓나 좋아하는 만큼 클릭해줘.↓</font></h3>
+	<span class="helloworld" onclick="cloneHelloWorld(this)">보고싶어. 사랑해.</span>
+</div>
+    
+
+<script type="text/javascript">
+
+function cloneHelloWorld(o){
+
+	var pos  = $(o).offset(); // 클릭한 이미지의 위치알아내기
+	// 이동할 위치값을 랜덤으로 생성 -300 부터 300 사이
+	var rnd1  = Math.round( Math.random() * 600 - 300 );
+	var rnd2 = Math.round( Math.random() * 600 - 300 );
+
+	// 클릭한 이미지 기준으로 이동할 위치계산
+	var move_top = pos.top - rnd1;
+	var move_left = pos.left - rnd2;
+
+	// 보기편하게 여러줄 코딩
+	$(o)
+	.clone() // 클릭한 이미지 복제
+	.appendTo( '.helloworld_box' ) // 복제한것 추가
+	.css({ top : pos.top, left : pos.left, position:'absolute' }) // 위치설정과 position 설정 변경
+	.animate( { top : move_top, left : move_left }, 1000, 'easeOutElastic', function(){ // 위치이동 애니매이션
+		var img = this; // setTimeout 에서 사용하기 위해 지역변수로 만들기
+
+		// 5초후 제거
+		setTimeout(function(){
+			$(img).remove();
+		}, 5000);
+	});
+}
+
+</script>
+    
+
+<!-- 예제 종료 -->
+    
     
     
     </div>
     </div>
    <br><br>
         
-   <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    <br>
-    
-     <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5ab206464b401e45400de95e/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-    
+ 
     </body>
     </html>
